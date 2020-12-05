@@ -40,6 +40,7 @@ This app is enabled to allow backup, so if the user has enabled auto backup to h
 ## That's It, I hope this app can help some small car wash business to keep organized with bookings.
 
 **Still need to implement new functionalities and organize the code structure**
+
 **Need to implement delete option for bookings and costumers**
 
 # Made by Luiz Henrique Goncalves, AKA Rck.
