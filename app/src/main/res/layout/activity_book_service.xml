@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookServiceActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <include layout="@layout/app_bar"/>
+
+    <TextView
+        android:id="@+id/label_input_name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="@dimen/first_element_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/input_name"
+        android:textSize="@dimen/text_size"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:text="@string/label_input_name"/>
+
+    <AutoCompleteTextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/auto_input_name"
+        android:layout_below="@+id/label_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="@string/name_placeholder"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auto_input_name"
+        android:orientation="horizontal"
+        android:id="@+id/date_picker_layout"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        >
+
+        <TextView
+            android:minWidth="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_label"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            />
+
+        <TextView
+            style="@android:style/Widget.Spinner"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:minWidth="100dp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:text="@string/date_hint"
+            android:hint="@string/date_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_picker_layout"
+        android:orientation="horizontal"
+        android:id="@+id/time_picker_layout"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        >
+
+        <TextView
+            android:minWidth="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            />
+
+        <TextView
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/text_view_time"
+            android:textColor="@color/black"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:text="@string/time_hint"
+            android:hint="@string/time_hint" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/time_picker_layout"
+        android:id="@+id/services_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/services_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/services_title"
+        android:id="@+id/services"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_simple"
+            android:textSize="@dimen/text_size" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="@string/service_complete_ws" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:text="@string/service_complete" />
+
+    </RadioGroup>
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_confirm_book"
+        android:text="@string/btn_confirm_book"
+        android:layout_below="@+id/services"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_cancel"
+        android:text="@string/btn_cancel"
+        android:layout_below="@+id/btn_confirm_book"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerSignInActivity">
+
+    <include layout="@layout/app_bar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/first_element_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/card_view_color"
+        android:padding="10dp"
+        android:hint="@string/name_placeholder"
+        android:id="@+id/input_name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/input_distance"
+        android:padding="10dp"
+        android:layout_below="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/card_view_color"
+        android:hint="@string/phone_placeholder"
+        android:id="@+id/input_phone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="9"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_save"
+        android:text="@string/btn_save"
+        android:layout_below="@+id/input_phone"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_cancel"
+        android:text="@string/btn_cancel"
+        android:layout_below="@+id/btn_save"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

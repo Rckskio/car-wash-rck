@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Car Wash Rck</string>
+    <string name="btn_sign_in">Customer Sign In</string>
+    <string name="btn_book_service">Book a Service</string>
+    <string name="btn_calendar">Calendar</string>
+    <string name="btn_customers_list">Customers List</string>
+    <string name="btn_save">Save</string>
+    <string name="name_placeholder">Name: </string>
+    <string name="phone_placeholder">Phone: </string>
+    <string name="label_input_name">Customer: </string>
+    <string name="services_title">Services</string>
+    <string name="service_simple">Simple Wash</string>
+    <string name="service_complete_ws">Complete without wax</string>
+    <string name="service_complete">Complete with wax</string>
+    <string name="btn_confirm_book">Book</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="back_text"><![CDATA[<]]></string>
+    <string name="date_label">Date: </string>
+    <string name="time_label">Time: </string>
+    <string name="date_hint">Select Date</string>
+    <string name="time_hint">Select Time</string>
+    <string name="service_placeholder">Service: </string>
+    <string name="date_placeholder">Date: </string>
+</resources>

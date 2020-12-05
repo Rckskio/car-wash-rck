@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_width">150dp</dimen>
+    <dimen name="btn_margin">10dp</dimen>
+    <dimen name="first_element_margin_top">100dp</dimen>
+    <dimen name="input_distance">10dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="textview_text_size">14sp</dimen>
+
+</resources>

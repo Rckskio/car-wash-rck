@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/card_view_color"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:textColor="@color/card_view_label_color"
+                    android:minWidth="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textview_text_size"
+                    android:text="@string/name_placeholder"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/book_name_textView"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/textview_text_size"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:minWidth="50dp"
+                    android:textColor="@color/card_view_label_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_placeholder"
+                    android:textSize="@dimen/textview_text_size"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/book_date_textView"
+                    android:textSize="@dimen/textview_text_size"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:minWidth="50dp"
+                    android:textColor="@color/card_view_label_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_label"
+                    android:textSize="@dimen/textview_text_size"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/book_time_textView"
+                    android:textSize="@dimen/textview_text_size"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:minWidth="50dp"
+                    android:textColor="@color/card_view_label_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_placeholder"
+                    android:textSize="@dimen/textview_text_size"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/book_service_textView"
+                    android:textSize="@dimen/textview_text_size"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

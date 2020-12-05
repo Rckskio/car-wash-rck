@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/main_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_sign_in"
+        android:text="@string/btn_sign_in"
+        android:layout_below="@+id/main_app_bar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_book_service"
+        android:text="@string/btn_book_service"
+        android:layout_below="@+id/btn_sign_in"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_calendar"
+        android:text="@string/btn_calendar"
+        android:layout_below="@+id/btn_book_service"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="@style/default_button"
+        android:id="@+id/btn_customers_list"
+        android:text="@string/btn_customers_list"
+        android:layout_below="@+id/btn_calendar"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
