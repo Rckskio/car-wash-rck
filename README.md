@@ -47,7 +47,7 @@ This app is enabled to allow backup, so if the user has enabled auto backup to h
 
 **Light mode example**
 
-![Car Wash Light mode](https://thumbs.gfycat.com/PopularEdibleAllosaurus-mobile.jpg)
+![Car Wash Light mode](https://thumbs.gfycat.com/PopularEdibleAllosaurus-size_restricted.gif)
 
 **Dark mode example**
 
