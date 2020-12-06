@@ -45,5 +45,12 @@ This app is enabled to allow backup, so if the user has enabled auto backup to h
 
 # Made by Luiz Henrique Goncalves, AKA Rck.
 
+**Light mode example**
+
+![Car Wash Light mode](https://thumbs.gfycat.com/PopularEdibleAllosaurus-mobile.jpg)
+
+**Dark mode example**
+
+![Car Wash example dark mode](https://thumbs.gfycat.com/ZanyInfiniteCuckoo-size_restricted.gif)
 
 
