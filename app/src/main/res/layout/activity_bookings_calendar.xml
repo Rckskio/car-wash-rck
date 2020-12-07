@@ -6,7 +6,7 @@
     tools:context=".CustomersListActivity">
 
     <include
-        android:id="@+id/app_title"
+        android:id="@+id/app_title_bar"
         layout="@layout/app_bar"
         />
 
@@ -14,7 +14,7 @@
         android:id="@+id/recyclerview_bookings"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/app_title"
+        android:layout_below="@id/app_title_bar"
         android:paddingTop="15dp"
         tools:listitem="@layout/recyclerview_book_item" />
 

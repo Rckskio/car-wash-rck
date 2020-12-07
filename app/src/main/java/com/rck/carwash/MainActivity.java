@@ -13,45 +13,35 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnSignIn = findViewById(R.id.btn_sign_in);
+        Button btnRecord = findViewById(R.id.btn_record);
         Button btnBookService = findViewById(R.id.btn_book_service);
-        Button btnCalendar = findViewById(R.id.btn_calendar);
+        Button btnBookingsCalendar = findViewById(R.id.btn_bookings_calendar);
         Button btnCustomersList = findViewById(R.id.btn_customers_list);
 
-        btnSignIn.setOnClickListener(v -> handleSignIn());
+        btnRecord.setOnClickListener(v -> handleRecord());
         btnBookService.setOnClickListener(v -> handleBookService());
-        btnCalendar.setOnClickListener(v -> handleCalendar());
+        btnBookingsCalendar.setOnClickListener(v -> handleBookingsCalendar());
         btnCustomersList.setOnClickListener(v -> handleCustomersList());
 
     }
 
-    private void handleSignIn() {
-        System.out.println("ACTIVITY: Button SignIn pressed");
-        Intent intent = new Intent(this, CustomerSignInActivity.class);
+    private void handleRecord() {
+        Intent intent = new Intent(this, RecordCustomerActivity.class);
         startActivity(intent);
     }
 
     private void handleBookService() {
-        System.out.println("ACTIVITY: Button Book Service pressed");
         Intent intent = new Intent(this, BookServiceActivity.class);
         startActivity(intent);
     }
 
-    private void handleCalendar() {
-        System.out.println("ACTIVITY: Button Calendar pressed");
-        Intent intent = new Intent(this, CalendarActivity.class);
+    private void handleBookingsCalendar() {
+        Intent intent = new Intent(this, BookingsCalendarActivity.class);
         startActivity(intent);
     }
 
     private void handleCustomersList() {
-        System.out.println("ACTIVITY: Button Customers List pressed");
         Intent intent = new Intent(this, CustomersListActivity.class);
         startActivity(intent);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        System.out.println("ACTIVITY: Main Activity finished successfully");
     }
 }

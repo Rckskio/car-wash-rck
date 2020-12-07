@@ -5,9 +5,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -15,15 +15,18 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class CustomerSignInActivity extends AppCompatActivity {
+public class RecordCustomerActivity extends AppCompatActivity {
     private TextInputEditText editTextName;
     private TextInputEditText editTextPhone;
     private CustomerViewModel mCustomerViewModel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_sign_in);
+        setContentView(R.layout.activity_record_customer);
+        TextView appBarText = findViewById(R.id.app_title);
+        appBarText.setText(R.string.btn_record_customer);
 
         System.out.println("ACTIVITY: Customer Sign in activity started");
 
@@ -63,20 +66,17 @@ public class CustomerSignInActivity extends AppCompatActivity {
     }
 
     private void handleSaveClick() {
-        System.out.println("ACTIVITY: Save Button pressed");
-        if (TextUtils.isEmpty(editTextName.getText()) || TextUtils.isEmpty(editTextPhone.getText())) {
-            Toast.makeText(
-                    getApplicationContext(),
-                    "You must fill up both fields!",
-                    Toast.LENGTH_LONG).show();
-        } else if(validatePhone(editTextPhone.getText().toString())){
+        if(validatePhone(editTextPhone.getText().toString())){
             String name = capitalizeAll(editTextName.getText().toString());
-            System.out.println("NAME: " + name);
             String phone = editTextPhone.getText().toString();
             Customer customer = new Customer();
             customer.name = name;
             customer.phone = phone;
             mCustomerViewModel.insert(customer);
+            Toast.makeText(
+                    getApplicationContext(),
+                    "Customer registered successfully =)",
+                    Toast.LENGTH_LONG).show();
             finish();
         } else {
             Toast.makeText(

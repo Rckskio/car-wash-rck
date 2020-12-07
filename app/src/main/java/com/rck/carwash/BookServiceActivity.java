@@ -39,7 +39,8 @@ public class BookServiceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_service);
-        System.out.println("ACTIVITY: BookService Activity started");
+        TextView appBarText = findViewById(R.id.app_title);
+        appBarText.setText(R.string.btn_book_service);
         names = new ArrayList<>();
         autoCompleteTextView = findViewById(R.id.auto_input_name);
         radioGroup = findViewById(R.id.services);

@@ -14,8 +14,8 @@
 
     <Button
         style="@style/default_button"
-        android:id="@+id/btn_sign_in"
-        android:text="@string/btn_sign_in"
+        android:id="@+id/btn_record"
+        android:text="@string/btn_record_customer"
         android:layout_below="@+id/main_app_bar"
         android:layout_centerHorizontal="true"
         />
@@ -24,14 +24,14 @@
         style="@style/default_button"
         android:id="@+id/btn_book_service"
         android:text="@string/btn_book_service"
-        android:layout_below="@+id/btn_sign_in"
+        android:layout_below="@+id/btn_record"
         android:layout_centerHorizontal="true"
         />
 
     <Button
         style="@style/default_button"
-        android:id="@+id/btn_calendar"
-        android:text="@string/btn_calendar"
+        android:id="@+id/btn_bookings_calendar"
+        android:text="@string/btn_bookings_calendar"
         android:layout_below="@+id/btn_book_service"
         android:layout_centerHorizontal="true"
         />
@@ -40,7 +40,7 @@
         style="@style/default_button"
         android:id="@+id/btn_customers_list"
         android:text="@string/btn_customers_list"
-        android:layout_below="@+id/btn_calendar"
+        android:layout_below="@+id/btn_bookings_calendar"
         android:layout_centerHorizontal="true"
         />
 

@@ -6,15 +6,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class CalendarActivity extends AppCompatActivity {
+public class BookingsCalendarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+        setContentView(R.layout.activity_bookings_calendar);
+        TextView appBarText = findViewById(R.id.app_title);
+        appBarText.setText(R.string.btn_bookings_calendar);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview_bookings);
         FloatingActionButton floatingActionButton = findViewById(R.id.fab_back);

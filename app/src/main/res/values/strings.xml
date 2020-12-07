@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Car Wash Rck</string>
-    <string name="btn_sign_in">Customer Sign In</string>
+    <string name="btn_record_customer">Record Customer</string>
     <string name="btn_book_service">Book a Service</string>
-    <string name="btn_calendar">Calendar</string>
+    <string name="btn_bookings_calendar">Bookings Calendar</string>
     <string name="btn_customers_list">Customers List</string>
     <string name="btn_save">Save</string>
     <string name="name_placeholder">Name: </string>

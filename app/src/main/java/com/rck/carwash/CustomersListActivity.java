@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -15,6 +16,10 @@ public class CustomersListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customers_list);
+
+        TextView appBarText = findViewById(R.id.app_title);
+        appBarText.setText(R.string.btn_customers_list);
+
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         FloatingActionButton floatingActionButton = findViewById(R.id.fab);
         final CustomerListAdapter adapter = new CustomerListAdapter(new CustomerListAdapter.CustomerDiff());

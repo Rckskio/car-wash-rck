@@ -12,9 +12,9 @@
         android:fullBackupContent="@xml/backup_descriptor">
 
         <activity android:name=".CustomersListActivity" />
-        <activity android:name=".CalendarActivity" />
+        <activity android:name=".BookingsCalendarActivity" />
         <activity android:name=".BookServiceActivity" android:configChanges="orientation|screenSize"/>
-        <activity android:name=".CustomerSignInActivity" />
+        <activity android:name=".RecordCustomerActivity" />
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
